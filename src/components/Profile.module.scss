@@ -1,0 +1,120 @@
+.card {
+  width: var(--card-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background: var(--cl-light);
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.06),
+              0 1px 3px 0 rgb(0 0 0 / 0.10);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+
+  img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: var(--avatar-size);
+    object-fit: cover;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    text-align: center;
+    color: var(--cl-dark);
+    margin-bottom: 0.25rem;
+  }
+
+  h4 {
+    font-size: var(--fsize-s);
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  h2, h4 {
+    -webkit-line-clamp: 1;
+  }
+
+  p {
+    text-align: center;
+    -webkit-line-clamp: 5;
+  }
+
+  h2, h4, p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: stretch;
+
+  button, ul, li {
+    all: unset;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  li {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+    &:hover, &:focus {
+      background: var(--cl-gray-l2);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px var(--cl-secondary-l);
+    }
+  }
+
+  svg {
+    fill: var(--cl-secondary-m);
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btnSecondary {
+  text-align: center;
+  color: var(--cl-light);
+  background: var(--cl-secondary-m);
+  padding: 0.625rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.06),
+              0 1px 3px 0 rgb(0 0 0 / 0.10);
+
+  &:hover, &:focus {
+    background: var(--cl-secondary-d);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--cl-secondary-l);
+  }
+
+  &:disabled {
+    background: var(--cl-gray-l2);
+    color: var(--cl-gray-m2);
+    box-shadow: none;
+  }
+}
