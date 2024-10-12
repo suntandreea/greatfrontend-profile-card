@@ -87,8 +87,8 @@ footer {
 
   svg {
     fill: var(--cl-secondary-m);
-    width: 1.25rem;
-    height: 1.25rem;
+    width: var(--icon-size);
+    height: var(--icon-size);
     display: flex;
     justify-content: center;
     align-items: center;

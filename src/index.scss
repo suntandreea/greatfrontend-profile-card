@@ -12,13 +12,14 @@
   --cl-secondary-m: #4338ca;
   --cl-secondary-d: #3730a3;
 
-  --fsize-s: 0.875rem; // clamp(0.875rem, 1.125vw, 1rem);
-  --fsize-m: 1rem; // clamp(1rem, 1.25vw, 1.2rem);
-  --fsize-l: 1.125rem; // clamp(1.125rem, 1.5vw, 1.5rem);
+  --fsize-s: clamp(0.875rem, 1.125vw, 1rem);
+  --fsize-m: clamp(1rem, 1.25vw, 1.2rem);
+  --fsize-l: clamp(1.125rem, 1.5vw, 1.5rem);
 
   --min-width: 21.25rem;
-  --card-width: 21.25rem; // clamp(var(--min-width), 40vw, 800px);
-  --avatar-size: 4rem; // clamp(4rem, 10vw, 5rem);
+  --card-width: clamp(var(--min-width), 40vw, 800px);
+  --avatar-size: clamp(4rem, 15vw, 6rem);
+  --icon-size: clamp(1.125rem, 10vw, 2rem);
 }
 
 * {
