@@ -75,6 +75,9 @@ footer {
   li {
     padding: 0.5rem;
     border-radius: 0.25rem;
+    box-shadow: none;
+    transition: background 0.3s ease,
+                box-shadow 0.3s ease;
 
     &:hover, &:focus {
       background: var(--cl-gray-l2);
@@ -103,6 +106,8 @@ footer {
   border-radius: 0.25rem;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.06),
               0 1px 3px 0 rgb(0 0 0 / 0.10);
+  transition: background 0.3s ease,
+              box-shadow 0.3s ease;
 
   &:hover, &:focus {
     background: var(--cl-secondary-d);
